@@ -1,4 +1,5 @@
 import "./App.css";
+import Food from "./components/Food";
 import HeadlineCart from "./components/HeadlineCart";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <HeadlineCart />
+      <Food />
     </div>
   );
 }

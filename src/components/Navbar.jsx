@@ -31,7 +31,7 @@ const Navbar = () => {
         <AiOutlineSearch size={20} />
         <input
           type="text"
-          className="bg-transparent focus:outline-none p-2"
+          className="bg-transparent focus:outline-none p-2 w-full"
           placeholder="Search tools"
         />
       </div>
@@ -43,7 +43,10 @@ const Navbar = () => {
       {/* OVerlay */}
 
       {open ? (
-        <div className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0"></div>
+        <div
+          className="bg-black/80 fixed w-full h-screen z-10 top-0 left-0"
+          onClick={() => setOpen(!open)}
+        ></div>
       ) : (
         ""
       )}
